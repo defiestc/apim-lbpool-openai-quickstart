@@ -337,7 +337,7 @@ You can use Azure CLI or Azure PowerShell to deploy the Bicep file.  For more in
 1. In the same folder, save the XML file as **policy.xml** to your local computer
 1. Deploy the Bicep file using either Azure CLI or Azure PowerShell.
 
-    # [CLI](#tab/CLI)
+### [CLI](#tab/CLI)
 
     ```azurecli
     az group create --name exampleRG --location eastus
@@ -345,7 +345,7 @@ You can use Azure CLI or Azure PowerShell to deploy the Bicep file.  For more in
     az deployment group create --resource-group exampleRG --template-file main.bicep
     ```
 
-    # [PowerShell](#tab/PowerShell)
+### [PowerShell](#tab/PowerShell)
 
     ```azurepowershell
     New-AzResourceGroup -Name exampleRG -Location eastus
@@ -357,20 +357,19 @@ You can use Azure CLI or Azure PowerShell to deploy the Bicep file.  For more in
 
     When the deployment finishes, you should see a message indicating the deployment succeeded.
 
-    > [!TIP]
-    >  It can take between 10 and 30 minutes to create and activate an API Management service. Times vary by tier.
+      >  It can take between 10 and 30 minutes to create and activate an API Management service. Times vary by tier.
 
 ## Review deployed resources
 
 Use the Azure portal, Azure CLI or Azure PowerShell to list the deployed App Configuration resource in the resource group.
 
-# [CLI](#tab/CLI)
+### [CLI](#tab/CLI)
 
 ```azurecli-interactive
 az resource list --resource-group exampleRG
 ```
 
-# [PowerShell](#tab/PowerShell)
+### [PowerShell](#tab/PowerShell)
 
 ```azurepowershell-interactive
 Get-AzResource -ResourceGroupName exampleRG
@@ -384,13 +383,13 @@ When your API Management service instance is online, you're ready to use it. Sta
 
 When no longer needed, delete the resource group, which deletes the resources in the resource group.
 
-# [CLI](#tab/CLI)
+### [CLI](#tab/CLI)
 
 ```azurecli-interactive
 az group delete --name exampleRG
 ```
 
-# [PowerShell](#tab/PowerShell)
+### [PowerShell](#tab/PowerShell)
 
 ```azurepowershell-interactive
 Remove-AzResourceGroup -Name exampleRG
@@ -401,3 +400,5 @@ Remove-AzResourceGroup -Name exampleRG
 ## Related content
 
 * API Management Backends: [Backends in API Management](https://learn.microsoft.com/en-us/azure/api-management/backends?tabs=bicep)
+
+* AI Gateway samples: [APIM ❤️ OpenAI - 🧪 Labs for the GenAI Gateway capabilities of Azure API Management](https://github.com/Azure-Samples/AI-Gateway)
