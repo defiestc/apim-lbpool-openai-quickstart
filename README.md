@@ -377,8 +377,6 @@ Get-AzResource -ResourceGroupName exampleRG
 
 ---
 
-When your API Management service instance is online, you're ready to use it. Start with the tutorial to [import and publish](import-and-publish.md) your first API.
-
 ## Clean up resources
 
 When no longer needed, delete the resource group, which deletes the resources in the resource group.
