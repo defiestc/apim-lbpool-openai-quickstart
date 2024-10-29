@@ -5,7 +5,7 @@ Description: This sample describes how Azure API Management (APIM) can load bala
 Tags: Azure, API Management, Open AI, Managed identity
 ---
 
-# Quickstart: Create a new Backend Pool in Azure API Management using Bicep for load balance Open AI requests
+# Quickstart: Create a *Backend Pool* in Azure API Management using Bicep for load balance Open AI requests
 
 ![GitHub](https://img.shields.io/github/license/Azure-Samples/apim-lbpool-openai-quickstart)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Azure-Samples/apim-lbpool-openai-quickstart)
@@ -15,17 +15,18 @@ Tags: Azure, API Management, Open AI, Managed identity
 
 ## Scenario
 
-This quickstart describes how to use a Bicep file to create an backend pool in Azure API Management instance, for load balance Open AI requests.
-It's also use Managed identity to acess Open AI instances, instead of tradicional key access.
+This quickstart describes how to use a Bicep file to create a backend pool in Azure API Management instance, for load balance Open AI requests.
+It's also use Managed Identity to acess Open AI instances, instead of tradicional access keys.
 ![Topology](./media/arch1.png)
 
 
 ## Concept
 
-A *backend* (or *API backend*) in API Management is an HTTP service that implements your front-end API and its operations.
-API Management supports *backend pools*, when you want to implement multiple backends for an API and load-balance requests across those backends.
-[Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep) is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. It provides concise syntax, reliable type safety, and support for code reuse. Bicep offers the best authoring experience for your infrastructure-as-code solutions in Azure.
+A [backend](https://learn.microsoft.com/en-us/azure/api-management/backends?tabs=bicep) (or *API backend*) in API Management is an HTTP service that implements your front-end API and its operations.
 
+API Management supports *backend pools*, when you want to implement multiple backends for an API and load-balance requests across those backends.
+
+[Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep) is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. It provides concise syntax, reliable type safety, and support for code reuse. Bicep offers the best authoring experience for your infrastructure-as-code solutions in Azure.
 
 ## Prerequisites
 
