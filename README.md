@@ -339,7 +339,7 @@ You can use Azure CLI or Azure PowerShell to deploy the Bicep file.  For more in
 
 ### [CLI](#tab/CLI)
 
-    ```azurecli
+    ```bash
     az group create --name exampleRG --location eastus
 
     az deployment group create --resource-group exampleRG --template-file main.bicep
@@ -347,7 +347,7 @@ You can use Azure CLI or Azure PowerShell to deploy the Bicep file.  For more in
 
 ### [PowerShell](#tab/PowerShell)
 
-    ```azurepowershell
+    ```powershell
     New-AzResourceGroup -Name exampleRG -Location eastus
 
     New-AzResourceGroupDeployment -ResourceGroupName exampleRG -TemplateFile ./main.bicep
@@ -365,13 +365,13 @@ Use the Azure portal, Azure CLI or Azure PowerShell to list the deployed App Con
 
 ### [CLI](#tab/CLI)
 
-```azurecli-interactive
+```bash
 az resource list --resource-group exampleRG
 ```
 
 ### [PowerShell](#tab/PowerShell)
 
-```azurepowershell-interactive
+```powershell
 Get-AzResource -ResourceGroupName exampleRG
 ```
 
@@ -385,13 +385,13 @@ When no longer needed, delete the resource group, which deletes the resources in
 
 ### [CLI](#tab/CLI)
 
-```azurecli-interactive
+```bash
 az group delete --name exampleRG
 ```
 
 ### [PowerShell](#tab/PowerShell)
 
-```azurepowershell-interactive
+```powershell
 Remove-AzResourceGroup -Name exampleRG
 ```
 
