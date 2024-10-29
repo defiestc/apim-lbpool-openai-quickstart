@@ -363,13 +363,13 @@ You can use Azure CLI or Azure PowerShell to deploy the Bicep file.  For more in
 
 Use the Azure portal, Azure CLI or Azure PowerShell to list the deployed App Configuration resource in the resource group.
 
-### [CLI](#tab/CLI)
+### CLI
 
 ```bash
 az resource list --resource-group exampleRG
 ```
 
-### [PowerShell](#tab/PowerShell)
+### PowerShell
 
 ```powershell
 Get-AzResource -ResourceGroupName exampleRG
@@ -383,13 +383,13 @@ When your API Management service instance is online, you're ready to use it. Sta
 
 When no longer needed, delete the resource group, which deletes the resources in the resource group.
 
-### [CLI](#tab/CLI)
+### CLI
 
 ```bash
 az group delete --name exampleRG
 ```
 
-### [PowerShell](#tab/PowerShell)
+### PowerShell
 
 ```powershell
 Remove-AzResourceGroup -Name exampleRG
