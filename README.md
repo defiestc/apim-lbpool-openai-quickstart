@@ -337,23 +337,23 @@ You can use Azure CLI or Azure PowerShell to deploy the Bicep file.  For more in
 1. In the same folder, save the XML file as **policy.xml** to your local computer
 1. Deploy the Bicep file using either Azure CLI or Azure PowerShell.
 
-### [CLI](#tab/CLI)
+### CLI
 
-    ```bash
+```bash
     az group create --name exampleRG --location eastus
 
     az deployment group create --resource-group exampleRG --template-file main.bicep
-    ```
+```
 
-### [PowerShell](#tab/PowerShell)
+### PowerShell
 
-    ```powershell
+```powershell
     New-AzResourceGroup -Name exampleRG -Location eastus
 
     New-AzResourceGroupDeployment -ResourceGroupName exampleRG -TemplateFile ./main.bicep
-    ```
+```
 
-    ---
+---
 
     When the deployment finishes, you should see a message indicating the deployment succeeded.
 
