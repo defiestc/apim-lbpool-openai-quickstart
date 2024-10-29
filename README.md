@@ -38,12 +38,12 @@ API Management supports *backend pools*, when you want to implement multiple bac
         - If you're using a local installation, sign in to the Azure CLI by using the [az login](https://learn.microsoft.com/en-us/cli/azure/reference-index#az-login) command. To finish the authentication process, follow the steps displayed in your terminal. For other sign-in options, see [Sign in with the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli).
         - When you're prompted, install the Azure CLI extension on first use. For more information about extensions, see [Use extensions with the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-overview).
         - Run [az version](https://learn.microsoft.com/en-us/cli/azure/reference-index?#az-version) to find the version and dependent libraries that are installed. To upgrade to the latest version, run [az upgrade](https://learn.microsoft.com/en-us/cli/azure/reference-index?#az-upgrade).
-  - For Azure PowerShell:
-    - If you choose to use Azure PowerShell locally:
-      - [Install the latest version of the Az PowerShell module](https://learn.microsoft.com/en-us/powershell/azure/install-azure-powershell).
-      - Connect to your Azure account using the [Connect-AzAccount](https://learn.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount) cmdlet.
-    - If you choose to use Azure Cloud Shell:
-      - See [Overview of Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) for more information.
+- For Azure PowerShell:
+  - If you choose to use Azure PowerShell locally:
+    - [Install the latest version of the Az PowerShell module](https://learn.microsoft.com/en-us/powershell/azure/install-azure-powershell).
+    - Connect to your Azure account using the [Connect-AzAccount](https://learn.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount) cmdlet.
+  - If you choose to use Azure Cloud Shell:
+    - See [Overview of Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) for more information.
 
 ## Review the Bicep file
 
