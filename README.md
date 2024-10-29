@@ -355,9 +355,9 @@ You can use Azure CLI or Azure PowerShell to deploy the Bicep file.  For more in
 
 ---
 
-    When the deployment finishes, you should see a message indicating the deployment succeeded.
+When the deployment finishes, you should see a message indicating the deployment succeeded.
 
-      >  It can take between 10 and 30 minutes to create and activate an API Management service. Times vary by tier.
+> It can take between 10 and 30 minutes to create and activate an API Management service. Times vary by tier.
 
 ## Review deployed resources
 
