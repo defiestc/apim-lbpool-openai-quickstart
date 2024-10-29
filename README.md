@@ -396,6 +396,7 @@ Remove-AzResourceGroup -Name exampleRG
 ---
 
 ## Related content
+* API Management: [API Management documentation](https://learn.microsoft.com/en-us/azure/api-management/)
 
 * API Management Backends: [Backends in API Management](https://learn.microsoft.com/en-us/azure/api-management/backends?tabs=bicep)
 
