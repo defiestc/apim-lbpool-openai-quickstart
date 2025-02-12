@@ -346,24 +346,28 @@ More Azure API Management Bicep samples can be found in [Azure Quickstart Templa
 
 You can use Azure CLI or Azure PowerShell to deploy the Bicep file.  For more information about deploying Bicep files, see [Deploy](../azure-resource-manager/bicep/deploy-cli.md).
 
-1. Save the Bicep file as **main.bicep** to your local computer.
-1. In the same folder, save the XML file as **policy.xml** to your local computer
+1. Save the Bicep above as a file **main.bicep** to your local computer.
+1. In the same folder, save the XML above as a file **policy.xml** to your local computer
 1. Deploy the Bicep file using either Azure CLI or Azure PowerShell.
 
 ### CLI
 
 ```bash
-    az group create --name exampleRG --location eastus
+    cd ["path to your main.bicep file"]
+    
+    az group create --name rg-apim-demo --location eastus
 
-    az deployment group create --resource-group exampleRG --template-file main.bicep
+    az deployment group create --resource-group rg-apim-demo --template-file main.bicep
 ```
 
 ### PowerShell
 
 ```powershell
-    New-AzResourceGroup -Name exampleRG -Location eastus
+    cd ["path to your main.bicep file"]
 
-    New-AzResourceGroupDeployment -ResourceGroupName exampleRG -TemplateFile ./main.bicep
+    New-AzResourceGroup -Name rg-apim-demo -Location eastus
+
+    New-AzResourceGroupDeployment -ResourceGroupName rg-apim-demo -TemplateFile ./main.bicep
 ```
 
 ---
@@ -379,13 +383,13 @@ Use the Azure portal, Azure CLI or Azure PowerShell to list the deployed App Con
 ### CLI
 
 ```bash
-az resource list --resource-group exampleRG
+az resource list --resource-group rg-apim-demo
 ```
 
 ### PowerShell
 
 ```powershell
-Get-AzResource -ResourceGroupName exampleRG
+Get-AzResource -ResourceGroupName rg-apim-demo
 ```
 
 ---
@@ -397,13 +401,13 @@ When no longer needed, delete the resource group, which deletes the resources in
 ### CLI
 
 ```bash
-az group delete --name exampleRG
+az group delete --name rg-apim-demo
 ```
 
 ### PowerShell
 
 ```powershell
-Remove-AzResourceGroup -Name exampleRG
+Remove-AzResourceGroup -Name rg-apim-demo
 ```
 
 ---
