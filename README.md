@@ -404,6 +404,15 @@ When no longer needed, delete the resource group, which deletes the resources in
 az group delete --name rg-apim-demo
 ```
 
+```bash
+az rest --method delete --url "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.ApiManagement/locations/{location}/deletedservices/{serviceName}?api-version=2021-08-01"
+
+az rest --method delete --url "https://management.azure.com/subscriptions/a9017a88-3c91-4857-bd25-e6db25398199/providers/Microsoft.ApiManagement/locations/eastus/deletedservices/apiservicembmhqvfb44cyk?api-version=2024-05-01"
+
+```
+
+
+
 ### PowerShell
 
 ```powershell
