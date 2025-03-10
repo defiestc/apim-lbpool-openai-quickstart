@@ -396,21 +396,39 @@ Get-AzResource -ResourceGroupName rg-apim-demo
 
 ## Clean up resources
 
-When no longer needed, delete the resource group, which deletes the resources in the resource group.
+When no longer needed, delete the resource group.
 
 ### CLI
 
+
+Delete deployed models before deleting resource group
+```bash
+az cognitiveservices account deployment delete --name cog1-mbmhqvfb44cyk --resource-group rg-apim-demo --deployment-name openaideploy1
+az cognitiveservices account deployment delete --name cog1-mbmhqvfb44cyk --resource-group rg-apim-demo --deployment-name openaideploy2
+```
+
+Then, delete the resource group
 ```bash
 az group delete --name rg-apim-demo
 ```
 
+Delete Azure OpenAI resource
 ```bash
-az rest --method delete --url "https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.ApiManagement/locations/{location}/deletedservices/{serviceName}?api-version=2021-08-01"
+az cognitiveservices account delete --name cog1-mbmhqvfb44cyk --resource-group rg-apim-demo
+az cognitiveservices account delete --name cog2-mbmhqvfb44cyk --resource-group rg-apim-demo
+```
+Purge deleted items if you plan to reuse the names.
 
+Purge API Management
+```bash
 az rest --method delete --url "https://management.azure.com/subscriptions/a9017a88-3c91-4857-bd25-e6db25398199/providers/Microsoft.ApiManagement/locations/eastus/deletedservices/apiservicembmhqvfb44cyk?api-version=2024-05-01"
 
 ```
-
+Purge the Azure OpenAI resource-group
+```bash
+az rest --method delete --url "https://management.azure.com/subscriptions/a9017a88-3c91-4857-bd25-e6db25398199/providers/Microsoft.CognitiveServices/locations/eastus/deletedservices/cog1-mbmhqvfb44cyk?api-version=2024-10-01"
+az rest --method delete --url "https://management.azure.com/subscriptions/a9017a88-3c91-4857-bd25-e6db25398199/providers/Microsoft.CognitiveServices/locations/eastus/deletedservices/cog2-mbmhqvfb44cyk?api-version=2024-10-01"
+```
 
 
 ### PowerShell
